@@ -1,0 +1,511 @@
+{
+ "exportFormatVersion": 2,
+ "exportTime": "2026-11-23 12:30:00",
+ "containerVersion": {
+  "accountId": "6407249973",
+  "containerId": "288297641",
+  "containerVersionId": "0",
+  "container": {
+   "accountId": "6407249973",
+   "containerId": "288297641",
+   "name": "iskakovdamir.github.io/pragma-diagnostic-demo",
+   "publicId": "GTM-WXG7VH79",
+   "usageContext": [
+    "WEB"
+   ]
+  },
+  "tag": [
+   {
+    "accountId": "6407249973",
+    "containerId": "288297641",
+    "tagId": "201",
+    "name": "Google tag - GA4",
+    "type": "googtag",
+    "parameter": [
+     {
+      "type": "TEMPLATE",
+      "key": "tagId",
+      "value": "G-0ZBK920GZD"
+     }
+    ],
+    "firingTriggerId": [
+     "2147479573"
+    ],
+    "tagFiringOption": "ONCE_PER_EVENT",
+    "monitoringMetadata": {
+     "type": "MAP"
+    },
+    "consentSettings": {
+     "consentStatus": "NOT_SET"
+    }
+   },
+   {
+    "accountId": "6407249973",
+    "containerId": "288297641",
+    "tagId": "202",
+    "name": "GA4 Event - diagnostic funnel",
+    "type": "gaawe",
+    "parameter": [
+     {
+      "type": "BOOLEAN",
+      "key": "sendEcommerceData",
+      "value": "false"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "eventName",
+      "value": "{{Event}}"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "measurementIdOverride",
+      "value": "G-0ZBK920GZD"
+     },
+     {
+      "type": "LIST",
+      "key": "eventSettingsTable",
+      "list": [
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "tool_name"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{DLV - tool_name}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "hours_per_week"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{DLV - hours_per_week}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "monthly_cost_kzt"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{DLV - monthly_cost_kzt}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "top_process"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{DLV - top_process}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "cta_text"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{DLV - cta_text}}"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "firingTriggerId": [
+     "101"
+    ],
+    "tagFiringOption": "ONCE_PER_EVENT",
+    "monitoringMetadata": {
+     "type": "MAP"
+    },
+    "consentSettings": {
+     "consentStatus": "NOT_SET"
+    }
+   },
+   {
+    "accountId": "6407249973",
+    "containerId": "288297641",
+    "tagId": "203",
+    "name": "GA4 Event - generate_lead",
+    "type": "gaawe",
+    "parameter": [
+     {
+      "type": "BOOLEAN",
+      "key": "sendEcommerceData",
+      "value": "false"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "eventName",
+      "value": "generate_lead"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "measurementIdOverride",
+      "value": "G-0ZBK920GZD"
+     },
+     {
+      "type": "LIST",
+      "key": "eventSettingsTable",
+      "list": [
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "lead_id"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{DLV - lead_id}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "value"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{DLV - value}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "currency"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{DLV - currency}}"
+         }
+        ]
+       },
+       {
+        "type": "MAP",
+        "map": [
+         {
+          "type": "TEMPLATE",
+          "key": "parameter",
+          "value": "hours_per_week"
+         },
+         {
+          "type": "TEMPLATE",
+          "key": "parameterValue",
+          "value": "{{DLV - hours_per_week}}"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "firingTriggerId": [
+     "102"
+    ],
+    "tagFiringOption": "ONCE_PER_LOAD",
+    "monitoringMetadata": {
+     "type": "MAP"
+    },
+    "consentSettings": {
+     "consentStatus": "NOT_SET"
+    }
+   }
+  ],
+  "trigger": [
+   {
+    "accountId": "6407249973",
+    "containerId": "288297641",
+    "triggerId": "101",
+    "name": "CE - diagnostic funnel",
+    "type": "CUSTOM_EVENT",
+    "customEventFilter": [
+     {
+      "type": "MATCH_REGEX",
+      "parameter": [
+       {
+        "type": "TEMPLATE",
+        "key": "arg0",
+        "value": "{{_event}}"
+       },
+       {
+        "type": "TEMPLATE",
+        "key": "arg1",
+        "value": "^(diagnostic_start|diagnostic_result|cta_click)$"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "accountId": "6407249973",
+    "containerId": "288297641",
+    "triggerId": "102",
+    "name": "CE - generate_lead",
+    "type": "CUSTOM_EVENT",
+    "customEventFilter": [
+     {
+      "type": "EQUALS",
+      "parameter": [
+       {
+        "type": "TEMPLATE",
+        "key": "arg0",
+        "value": "{{_event}}"
+       },
+       {
+        "type": "TEMPLATE",
+        "key": "arg1",
+        "value": "generate_lead"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "variable": [
+   {
+    "accountId": "6407249973",
+    "containerId": "288297641",
+    "variableId": "1",
+    "name": "DLV - tool_name",
+    "type": "v",
+    "parameter": [
+     {
+      "type": "INTEGER",
+      "key": "dataLayerVersion",
+      "value": "2"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "setDefaultValue",
+      "value": "false"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "name",
+      "value": "tool_name"
+     }
+    ]
+   },
+   {
+    "accountId": "6407249973",
+    "containerId": "288297641",
+    "variableId": "2",
+    "name": "DLV - hours_per_week",
+    "type": "v",
+    "parameter": [
+     {
+      "type": "INTEGER",
+      "key": "dataLayerVersion",
+      "value": "2"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "setDefaultValue",
+      "value": "false"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "name",
+      "value": "hours_per_week"
+     }
+    ]
+   },
+   {
+    "accountId": "6407249973",
+    "containerId": "288297641",
+    "variableId": "3",
+    "name": "DLV - monthly_cost_kzt",
+    "type": "v",
+    "parameter": [
+     {
+      "type": "INTEGER",
+      "key": "dataLayerVersion",
+      "value": "2"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "setDefaultValue",
+      "value": "false"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "name",
+      "value": "monthly_cost_kzt"
+     }
+    ]
+   },
+   {
+    "accountId": "6407249973",
+    "containerId": "288297641",
+    "variableId": "4",
+    "name": "DLV - top_process",
+    "type": "v",
+    "parameter": [
+     {
+      "type": "INTEGER",
+      "key": "dataLayerVersion",
+      "value": "2"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "setDefaultValue",
+      "value": "false"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "name",
+      "value": "top_process"
+     }
+    ]
+   },
+   {
+    "accountId": "6407249973",
+    "containerId": "288297641",
+    "variableId": "5",
+    "name": "DLV - cta_text",
+    "type": "v",
+    "parameter": [
+     {
+      "type": "INTEGER",
+      "key": "dataLayerVersion",
+      "value": "2"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "setDefaultValue",
+      "value": "false"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "name",
+      "value": "cta_text"
+     }
+    ]
+   },
+   {
+    "accountId": "6407249973",
+    "containerId": "288297641",
+    "variableId": "6",
+    "name": "DLV - lead_id",
+    "type": "v",
+    "parameter": [
+     {
+      "type": "INTEGER",
+      "key": "dataLayerVersion",
+      "value": "2"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "setDefaultValue",
+      "value": "false"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "name",
+      "value": "lead_id"
+     }
+    ]
+   },
+   {
+    "accountId": "6407249973",
+    "containerId": "288297641",
+    "variableId": "7",
+    "name": "DLV - value",
+    "type": "v",
+    "parameter": [
+     {
+      "type": "INTEGER",
+      "key": "dataLayerVersion",
+      "value": "2"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "setDefaultValue",
+      "value": "false"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "name",
+      "value": "value"
+     }
+    ]
+   },
+   {
+    "accountId": "6407249973",
+    "containerId": "288297641",
+    "variableId": "8",
+    "name": "DLV - currency",
+    "type": "v",
+    "parameter": [
+     {
+      "type": "INTEGER",
+      "key": "dataLayerVersion",
+      "value": "2"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "setDefaultValue",
+      "value": "false"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "name",
+      "value": "currency"
+     }
+    ]
+   }
+  ],
+  "builtInVariable": [
+   {
+    "accountId": "6407249973",
+    "containerId": "288297641",
+    "type": "EVENT",
+    "name": "Event"
+   }
+  ]
+ }
+}
