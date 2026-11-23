@@ -223,9 +223,10 @@ $('cta').onclick = () => {
 
 $('leadForm').onsubmit = async e => {
   e.preventDefault();
-  if (state.leadSent) return;                        // second click does nothing
+  if (state.leadSent || state.sending) return;       // second submit does nothing, even mid-request
   const f = e.target;
   if (!f.name.value.trim() || !f.contact.value.trim()){ (f.name.value.trim() ? f.contact : f.name).focus(); return; }
+  state.sending = true;
   $('send').disabled = true; $('send').textContent = 'Отправляем…';
   // Demo: no backend, we only wait as if the server answered OK.
   await new Promise(r => setTimeout(r, 600));
