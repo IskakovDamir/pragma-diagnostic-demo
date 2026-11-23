@@ -63,6 +63,7 @@
   input:focus{border-color:var(--blue);background:#fff}
   .ok{font-size:22px;line-height:1.45}
   .hidden{display:none}
+  body.debug .wrap{padding-bottom:calc(46vh + 48px)}  /* keep content scrollable above the fixed debug log */
   #log{position:fixed;right:16px;bottom:16px;width:380px;max-height:46vh;overflow:auto;background:#04131b;color:#cfe0ff;
        font:13px/1.5 'JetBrains Mono',monospace;border-radius:20px;padding:16px 18px;box-shadow:0 20px 60px rgba(4,19,27,.25)}
   #log .t{color:#7fb0ff;margin-bottom:8px;font-family:Manrope,sans-serif;font-size:13px}
@@ -156,7 +157,7 @@ const Q = [
 const state = {i:0, a:{}, started:false, resultSent:false, leadSent:false};
 const $ = id => document.getElementById(id);
 const debug = new URLSearchParams(location.search).has('debug');
-if (debug) $('log').classList.remove('hidden');
+if (debug){ $('log').classList.remove('hidden'); document.body.classList.add('debug'); }
 
 function push(obj){
   window.dataLayer.push(obj);
