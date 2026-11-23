@@ -16,7 +16,7 @@
 
 ## Seed data (test, not real traffic)
 
-7 runs on 2026-11-23 with `utm_campaign=seed_test`, sources linkedin / telegram / hh_outreach.
+7 runs on 2026-11-23 with `utm_campaign=seed_test`: linkedin x2 (1 lead, 1 stopped at CTA), telegram x3 (2 leads, 1 stopped at result), hh_outreach x2 (1 lead, 1 stopped after start). Funnel: 7 start > 6 result > 5 cta_click > 4 generate_lead.
 Filter them out with `Session campaign != seed_test`.
 
 ## Live checklist
@@ -31,4 +31,7 @@ Filter them out with `Session campaign != seed_test`.
 5. GA4 > Explore > Funnel exploration, steps:
    page_view > diagnostic_start > diagnostic_result > cta_click > generate_lead.
    Breakdown: Session source. Today's data shows up in Explore with a delay of a few hours, so build it before the lecture.
-6. Optional: QR code to the site with `utm_source=lecture_qr`, then show the live audience in Realtime.
+6. After Preview: Tag Assistant leaves a `__TAG_ASSISTANT=x` cookie on iskakovdamir.github.io.
+   While it is set, that browser loads GTM in debug mode and sends nothing to normal reports or Realtime
+   (even after "Stop debugging"). Clear site cookies or use another browser/incognito for non-debug runs.
+7. Optional: QR code to the site with `utm_source=lecture_qr`, then show the live audience in Realtime.
